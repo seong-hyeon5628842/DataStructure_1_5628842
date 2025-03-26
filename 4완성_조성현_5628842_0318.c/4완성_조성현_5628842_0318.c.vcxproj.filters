@@ -15,8 +15,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="3완성_조성현__5628842_0313.c.cpp">
-      <Filter>리소스 파일</Filter>
+    <ClCompile Include="4완성_조성현_5628842_0318.c">
+      <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

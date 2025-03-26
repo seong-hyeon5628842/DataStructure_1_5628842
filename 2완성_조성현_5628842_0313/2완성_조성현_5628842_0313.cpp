@@ -25,5 +25,7 @@ int main() {
 		printf("%u ", (mantissa_bits >> i) & 1);
 	}
 	printf("\n");
+
+	return 0;
 	
 }

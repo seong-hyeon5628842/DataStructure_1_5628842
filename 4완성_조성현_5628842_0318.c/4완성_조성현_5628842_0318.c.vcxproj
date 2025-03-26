@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{261d1102-7e92-4e40-a260-9ecfbb7dcd26}</ProjectGuid>
-    <RootNamespace>My3완성이름학번0313c</RootNamespace>
+    <ProjectGuid>{2230d927-8db5-48ab-ab28-d4ed408a3ae0}</ProjectGuid>
+    <RootNamespace>My4완성조성현56288420318c</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>3완성_조성현__5628842_0313.c</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -128,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="3완성_조성현__5628842_0313.c.cpp" />
+    <ClCompile Include="4완성_조성현_5628842_0318.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
