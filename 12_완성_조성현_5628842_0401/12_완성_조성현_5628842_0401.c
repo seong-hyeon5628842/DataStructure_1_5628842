@@ -16,7 +16,7 @@ int fibo_itr(int n) {
 	if (n == 0) return 0;
 	if (n == 1) return 1;
 
-	int f_n_2 = 0;
+	int f_n_2 = 0;	
 	int f_n_1 = 1;
 	int f_n = 0;
 
