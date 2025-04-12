@@ -1,4 +1,6 @@
 	#pragma once
+#include<stdio.h>
+#include<stdlib.h>
 float coef;
 typedef struct ListNode {
 	float coef; //°è¼ö

@@ -27,5 +27,35 @@ void appendTerm(ListHead* L, float coef, int expo) {
 	}
 }
 void mulPoly(ListHead* A, ListHead* B, ListHead* C) {
-
+	ListNode* pA = A->head;
+	ListNode* pB = B->head;
+	float sum;
+	while (pA && pB) {
+		if (pA->expo == pB->expo) {
+			sum = pA->coef + pB->coef;
+			appendTerm(C, sum, pA->expo);
+			pA = pA->link; pB = pB->link;
+		}
+		else if (pA->expo > pB->expo) {
+			appendTerm(C, pA->coef, pA->expo);
+			pA = pA->link;
+		}
+		else {
+			appendTerm(C, pB->coef, pB->expo);
+			pB = pB->link;
+		}
+	}
+	for (; pA != NULL; pA = pA->link) {
+		appendTerm(C, pA->coef, pA->expo);
+	}
+	for (; pB != NULL; pB = pB->link) {
+		appendTerm(C, pB->coef, pB->expo);
+	}
 }
+	void printPoly(ListHead * L) {
+		ListNode* p = L->head;
+		for (; p; p = p->link) {
+			printf("%3.0fx^d", p->coef, p->expo);
+			if (p->link != NULL)printf(" +");
+		}
+	}
