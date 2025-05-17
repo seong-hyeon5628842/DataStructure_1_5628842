@@ -1,19 +1,42 @@
-#include<stdio.h>
+#include <stdio.h>
+#include <stdint.h>
 
-void binary_print(int a) {
-	int n = sizeof(int) * 8;
-	int mask = 1 << (n - 1);
+void printBits(uint32_t num) {
+    for (int i = 31; i >= 0; i--) {
+        printf("%d", (num >> i) & 1);
+    }
+    printf("\n");
+}
+
+int main() {
+    int input;
+
+    printf("정수를 입력하세요: ");
+    scanf_s("%d", &input);
+
+    // 부호가 있는 int를 부호 없는 32비트로 해석
+    uint32_t bitPattern = (uint32_t)input;
+
+    printf("입력된 정수의 32비트 표현: ");
+    printBits(bitPattern);
+
+    return 0;
+}
+/*#include <stdio.h>
+
+int main() {
+	int input;
+	int result = 0;
+	printf("정수를 입력하세요 : ");
+	scanf_s("%d", &input);
+
 	printf("입력된 정수의 32비트 표현 : ");
-	for (int i = 1; i <= n; i++) {
-		putchar((a & mask) ? '1' : '0');
-		a <<= 1;
+	//비트 연산자
+	for (int i = 31; i >= 0; --i) {
+		result = input >> i & 1;
+		printf("%d", result);
 	}
-}
+	
 
-int main(void) {
-	int i;
-	printf("정수 값을 입력하세요: ");
-	scanf_s("%d", &i);
-	binary_print(i);
 	return 0;
-}
+}*/
